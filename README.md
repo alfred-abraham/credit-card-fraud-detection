@@ -22,3 +22,7 @@ The final model achieved strong performance on the test set, effectively identif
 - Anonymized features restrict interpretability
 - Future work includes threshold tuning and cost-sensitive learning
 
+## How to Run
+Install dependencies using `pip install -r requirements.txt` and run the notebook located in the `notebooks/` directory.
+
+
