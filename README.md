@@ -16,8 +16,7 @@ Public credit card transaction dataset released by Université Libre de Bruxelle
 - Evaluation using precision, recall, and F1-score
 
 ## Results
-The final model achieved strong performance on the test set, effectively identifying fraudulent transactions while maintaining generalization across cross-validation folds.
-
+The final model achieved strong performance on the test set, obtaining a precision score of 88%, a recall score of 85%, and an f1 score of 86% for the fraudulent class, indicating a good balance between avoiding false positives and false negatives.
 ## Limitations & Next Steps
 - Limited time window of transactions
 - Anonymized features restrict interpretability
