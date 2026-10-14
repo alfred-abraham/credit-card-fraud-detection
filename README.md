@@ -2,7 +2,16 @@
 # Credit Card Fraud Detection
 
 ## Overview
-This project applies supervised machine learning to detect fraudulent credit card transactions in a highly imbalanced dataset. The analysis focuses on appropriate evaluation metrics and tradeoffs relevant to real-world fraud detection.
+This project uses XGBoost to classify fraudulent transactions in a highly imbalanced, anonymized credit-card dataset. The emphasis is on precision, recall, and F1-score rather than accuracy alone: a model predicting nearly every transaction as legitimate could appear accurate while missing fraud.
+
+## Operational Tradeoffs
+
+| Error | Why it matters |
+|---|---|
+| False negative | Fraud goes undetected and may lead to financial losses. |
+| False positive | A legitimate transaction may be flagged, adding review work or customer friction. |
+
+Choosing a classification threshold depends on the relative costs of these errors. **Threshold tuning and cost-sensitive evaluation are future work**, not results established by this project.
 
 ## Problem
 The task is to classify transactions as fraudulent or legitimate based on anonymized transaction features. This is a binary classification problem with severe class imbalance.
